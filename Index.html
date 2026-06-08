@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPELERÍA YOU PLAY</title>
+    <style>
+        body { font-family: 'Arial Black', sans-serif; background-color: #E3F2FD; color: #1A237E; margin: 0; padding: 0; }
+
+        /* TÍTULO CENTRALIZADO */
+        header { background-color: #0D47A1; color: #FFFFFF; text-align: center; padding: 40px 20px; }
+        header h1 { font-size: 32px; margin: 0; text-transform: uppercase; }
+
+        .container { padding: 20px; max-width: 800px; margin: 0 auto; }
+
+        /* DISEÑO DE LADO A LADO */
+        .seccion-flex {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 2px solid #0D47A1;
+            flex-wrap: wrap; /* Para que se acomode en celulares pequeños */
+        }
+
+        .texto-lado { flex: 1; min-width: 200px; padding: 10px; }
+        .imagen-lado { flex: 1; min-width: 200px; }
+
+        .imagen-lado img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h2 { color: #0D47A1; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PAPELERÍA YOU PLAY</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- BLOQUE 1: Imagen a la izquierda, Texto a la derecha -->
+        <div class="seccion-flex">
+            <div class="imagen-lado">
+                <img src="utiles.jpg" alt="Útiles">
+            </div>
+            <div class="texto-lado">
+                <h2>PRODUCTOS</h2>
+                <p>CONTAMOS CON EL MEJOR SURTIDO EN:</p>
+                <ul>
+                    <li>LIBRETAS Y CUADERNOS</li>
+                    <li>LÁPICES Y COLORES</li>
+                    <li>MATERIAL PARA MAQUETAS</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BLOQUE 2: Texto a la izquierda, Imagen a la derecha -->
+        <div class="seccion-flex">
+            <div class="texto-lado">
+                <h2>SERVICIOS</h2>
+                <p>IMPRESIONES DE ALTA CALIDAD:</p>
+                <ul>
+                    <li>COPIAS E IMPRESIONES</li>
+                    <li>ENMICADOS</li>
+                    <li>ENGARGOLADOS</li>
+                </ul>
+            </div>
+            <div class="imagen-lado">
+                <img src="impresiones.jpg" alt="Impresiones">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
